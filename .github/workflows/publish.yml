@@ -47,6 +47,9 @@ jobs:
           username: ${{ secrets.REGISTRY1_USERNAME }}
           password: ${{ secrets.REGISTRY1_PASSWORD }}
 
+      ####
+      # Build and publish capability package and skeleton
+      ####
       - name: Build jira package
         run: zarf package create --confirm --no-progress
 
