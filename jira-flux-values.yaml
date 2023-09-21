@@ -55,3 +55,7 @@ application:
     # When istio injected, add an annotation with the istio version to the manager pods only
     podAnnotations:
       bigbang.dev/istioVersion: ###ZARF_VAR_ISTIO_VERSION###
+    networkPolicies:
+      enabled: true
+      ingressLabels:
+        app: tenant-ingressgateway
