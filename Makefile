@@ -177,7 +177,6 @@ deploy/dubbd-k3d: | build/zarf ## Deploy the k3d flavor of DUBBD
 	cd build && ./zarf package deploy zarf-package-dubbd-k3d-amd64-$(DUBBD_K3D_VERSION).tar.zst --confirm
 
 deploy/uds-capability-jira: ## Deploy the jira capability
-	cp zarf-config.yaml build/
 	cd build && ./zarf package deploy zarf-package-jira-amd64-*.tar.zst --confirm
 
 ########################################################################
