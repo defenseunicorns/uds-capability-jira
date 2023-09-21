@@ -10,7 +10,7 @@ variables:
   - name: JIRA_DEPENDS_ON
     default: "[]"
   - name: JIRA_CREATE_NAMESPACE
-    default: "true"
+    default: "false"
   - name: DOMAIN
     default: "bigbang.dev"
 

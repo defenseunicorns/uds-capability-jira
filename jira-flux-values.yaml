@@ -30,6 +30,26 @@ application:
             memory: "6Gi"
         jvm:
           maxHeap: "4g"
+    database:
+      url: "jdbc:postgresql://jira-postgres.jira.svc.cluster.local:5432/jiradb"
+      credentials:
+        secretName: "jira-postgres"
+        usernameSecretKey: "username"
+        passwordSecretKey: "password"
+      # additionalEnvironmentVariables:
+      #   - name: ATL_DB_TYPE
+      #     value: "postgres72"
+      #   - name: ATL_DB_DRIVER
+      #     value: "org.postgresql.Driver"
+      #   - name: ATL_JDBC_URL
+      #     value: "jdbc:postgresql://postgres-jira.jira.svc.cluster.local:5432/jiradb"
+      #   - name: ATL_JDBC_USER
+      #     value: "jira"
+      #   - name: ATL_JDBC_PASSWORD
+      #     valueFrom:
+      #       secretKeyRef:
+      #         name: "postgres-jira"
+      #         key: "password"
     volumes:
       localHome:
         persistentVolumeClaim:
