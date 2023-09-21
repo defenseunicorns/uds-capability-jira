@@ -38,3 +38,14 @@ components:
     images:
       - registry1.dso.mil/ironbank/atlassian/jira-data-center/jira-node:9.10.0
       - registry1.dso.mil/ironbank/redhat/ubi/ubi8-minimal:8.8
+    actions:
+      onDeploy:
+        after:
+          - wait:
+              cluster:
+                kind: helmRelease
+                name: jira
+                condition: Ready
+                namespace: bigbang
+            maxTotalSeconds: 900
+            description: Jira HelmRelease to be Ready
