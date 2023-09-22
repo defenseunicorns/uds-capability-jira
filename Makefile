@@ -74,7 +74,7 @@ fix-cache-permissions: ## Fixes the permissions on the pre-commit cache
 ########################################################################
 
 .PHONY: test
-test: ## Run all automated tests. Requires access to an AWS account. Costs money. Requires env vars "REPO_URL", "GIT_BRANCH", "REGISTRY1_USERNAME", "REGISTRY1_PASSWORD", "GHCR_USERNAME", "GHCR_PASSWORD" and standard AWS env vars.
+test: ## Run all automated tests. Requires access to an AWS account. Costs money. Requires env vars "REPO_URL", "GIT_BRANCH", "REGISTRY1_USERNAME", "REGISTRY1_PASSWORD", and standard AWS env vars.
 	mkdir -p .cache/go
 	mkdir -p .cache/go-build
 	echo "Running automated tests. This will take several minutes. At times it does not log anything to the console. If you interrupt the test run you will need to log into AWS console and manually delete any orphaned infrastructure."
