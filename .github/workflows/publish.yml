@@ -48,6 +48,12 @@ jobs:
           password: ${{ secrets.REGISTRY1_PASSWORD }}
 
       ####
+      # Build and publish dependency packages to use in a dev UDS Bundle
+      ####
+      - name: Build and publish dev-dependency jira-postgres package
+        run: cd utils/pkg-deps/jira/postgres && zarf package create --confirm --no-progress --output oci://ghcr.io/defenseunicorns/uds-capability/jira/dev-dependency
+
+      ####
       # Build and publish capability package and skeleton
       ####
       - name: Build jira package
