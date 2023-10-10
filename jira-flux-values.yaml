@@ -19,6 +19,8 @@ application:
       jira:
         gateways:
           - istio-system/tenant
+        hosts:
+          - jira.###ZARF_VAR_DOMAIN###
     jira:
       resources:
         container:
