@@ -47,7 +47,7 @@ component-definition:
             - uuid: 5049a88c-e8b9-41de-9416-a3511d853992
               control-id: cp-2
               description: >-
-                Jira partially addreses this control by aiding in the coordination of the contingency plan, tracking updates, execution, and execution. Also aides in incorporating lessons learned through project management.  
+                Jira partially addreses this control by aiding in the coordination of the contingency plan, tracking updates, and execution. Also aides in incorporating lessons learned through project management.  
             - uuid: 47f77cba-6619-446d-bb42-1acaeff49913
               control-id: cp-2.1
               description: >-
