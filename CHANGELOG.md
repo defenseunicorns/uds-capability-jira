@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.6](https://github.com/defenseunicorns/uds-capability-jira/compare/v0.1.5...v0.1.6) (2024-01-24)
+
+
+### Features
+
+* Add home directory config ([#25](https://github.com/defenseunicorns/uds-capability-jira/issues/25)) ([76d5bfd](https://github.com/defenseunicorns/uds-capability-jira/commit/76d5bfd8e299266dd3a12341d42de3da0667f9aa))
+* add initial lula lint action ([#23](https://github.com/defenseunicorns/uds-capability-jira/issues/23)) ([4e81682](https://github.com/defenseunicorns/uds-capability-jira/commit/4e81682335747c9b0e103d1cc6e38f1e851e47e5))
+
 ## [0.1.5](https://github.com/defenseunicorns/uds-capability-jira/compare/v0.1.4...v0.1.5) (2024-01-09)
 
 
