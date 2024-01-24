@@ -47,11 +47,18 @@ application:
     volumes:
       localHome:
         persistentVolumeClaim:
-          create: true
+          create: ###ZARF_VAR_JIRA_LOCAL_HOME_ENABLED###
           # storageClassName: your-storage-class-here
           resources:
             requests:
-              storage: 1Gi
+              storage: ###ZARF_VAR_JIRA_LOCAL_HOME_SIZE###
+      sharedHome:
+        persistentVolumeClaim:
+          create: ###ZARF_VAR_JIRA_SHARED_HOME_ENABLED###
+          # storageClassName: your-storage-class-here
+          resources:
+            requests:
+              storage: ###ZARF_VAR_JIRA_SHARED_HOME_SIZE###
     # When istio injected, add an annotation with the istio version to the manager pods only
     podAnnotations:
       bigbang.dev/istioVersion: ###ZARF_VAR_ISTIO_VERSION###
