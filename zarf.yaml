@@ -22,13 +22,13 @@ variables:
   - name: JIRA_LOCAL_HOME_SIZE
     default: "128Gi"
   - name: JIRA_RWO_STORAGE_CLASS
-    default: "default"
+    default: "local-path"
   - name: JIRA_SHARED_HOME_ENABLED
     default: "false"
   - name: JIRA_SHARED_HOME_SIZE
     default: "128Gi"
   - name: JIRA_RWX_STORAGE_CLASS
-    default: "default"
+    default: "local-path"
   - name: DOMAIN
     default: "bigbang.dev"
 
