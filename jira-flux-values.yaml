@@ -48,14 +48,14 @@ application:
       localHome:
         persistentVolumeClaim:
           create: ###ZARF_VAR_JIRA_LOCAL_HOME_ENABLED###
-          # storageClassName: your-storage-class-here
+          storageClassName: ###ZARF_VAR_JIRA_RWO_STORAGE_CLASS###
           resources:
             requests:
               storage: ###ZARF_VAR_JIRA_LOCAL_HOME_SIZE###
       sharedHome:
         persistentVolumeClaim:
           create: ###ZARF_VAR_JIRA_SHARED_HOME_ENABLED###
-          # storageClassName: your-storage-class-here
+          storageClassName: ###ZARF_VAR_JIRA_RWX_STORAGE_CLASS###
           resources:
             requests:
               storage: ###ZARF_VAR_JIRA_SHARED_HOME_SIZE###
