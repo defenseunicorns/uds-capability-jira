@@ -18,7 +18,7 @@ variables:
   - name: JIRA_DB_USERNAME
     default: "jira"
   - name: JIRA_LOCAL_HOME_ENABLED
-    default: "true"
+    default: "false"
   - name: JIRA_LOCAL_HOME_SIZE
     default: "128Gi"
   - name: JIRA_RWO_STORAGE_CLASS
