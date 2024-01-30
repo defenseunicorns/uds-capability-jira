@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.7](https://github.com/defenseunicorns/uds-capability-jira/compare/v0.1.6...v0.1.7) (2024-01-30)
+
+
+### Miscellaneous
+
+* update jira to 1.17.2-bb.0 ([b084d40](https://github.com/defenseunicorns/uds-capability-jira/commit/b084d401417c46b9381761c78cf969e8fdf8554c))
+* update zarf and dubbd ([#26](https://github.com/defenseunicorns/uds-capability-jira/issues/26)) ([b084d40](https://github.com/defenseunicorns/uds-capability-jira/commit/b084d401417c46b9381761c78cf969e8fdf8554c))
+
 ## [0.1.6](https://github.com/defenseunicorns/uds-capability-jira/compare/v0.1.5...v0.1.6) (2024-01-24)
 
 
